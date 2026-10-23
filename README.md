@@ -1,6 +1,6 @@
 # Sodaro Sites — website
 
-Public site for Sodaro Sites: https://sodaro-sites.github.io
+Public site for Sodaro Sites: https://sodarosites.github.io
 
 Static HTML/CSS/JS on GitHub Pages. No build step.
 

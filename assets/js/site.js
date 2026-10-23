@@ -8,10 +8,10 @@
    ============================================================ */
 const SODARO_CONFIG = {
   stripe: {
-    localHero: "",       // Local Hero Pack — $499 one-time
-    corporate: "",       // Better Than Corporate — $899 one-time
-    careLocal: "",       // Sodaro Care (Local) — $49/month
-    careCorporate: ""    // Sodaro Care (Corporate) — $99/month
+    localHero: "https://buy.stripe.com/00w14ocom0RSczo5YxbV600",       // Local Hero Pack — $499 one-time
+    corporate: "https://buy.stripe.com/cNi00kgEC8kk56W4UtbV601",       // Better Than Corporate — $899 one-time
+    careLocal: "https://buy.stripe.com/dRmbJ2com8kk7f4fz7bV602",       // Sodaro Care (Local) — $49/month
+    careCorporate: "https://buy.stripe.com/7sY4gAgEC8kkargfz7bV603"    // Sodaro Care (Corporate) — $99/month
   },
   contact: {
     email: "sodarosites@gmail.com",
