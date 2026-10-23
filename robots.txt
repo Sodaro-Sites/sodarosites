@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /thanks.html
 
-Sitemap: https://sodarosites.github.io/sitemap.xml
+Sitemap: https://sodaro-sites.github.io/sitemap.xml
