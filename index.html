@@ -28,6 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
+<link rel="stylesheet" href="assets/css/fx.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -48,11 +49,12 @@
   </div>
 </header>
 <main id="main">
-<section class="hero">
+<section class="hero fx-hero">
+  <div class="fx-aurora" aria-hidden="true"></div><div class="fx-grid" aria-hidden="true"></div><div class="fx-spot" aria-hidden="true"></div>
   <div class="wrap hero-grid">
-    <div>
+    <div class="fx-in">
       <span class="eyebrow">Websites for real businesses</span>
-      <h1>No website? Bad website? <span class="accent">Fixed.</span></h1>
+      <h1><span class="fx-shine">No website? Bad website?</span> <span class="accent">Fixed.</span></h1>
       <p class="lede">We build you a free demo of your new site. You only pay if you love it.</p>
       <div class="btn-row">
         <a class="btn btn-primary" href="contact.html#demo">Get my free demo</a>
@@ -64,29 +66,45 @@
         <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Live on your domain in about a week</li>
       </ul>
     </div>
-    <div class="compare" aria-hidden="true">
-      <div class="mock mock-old">
-        <div class="mock-bar"><i></i><i></i><i></i><b>yourbusiness-2011.example</b></div>
-        <span class="tag">Before</span>
-        <div class="mock-body">
-          <div class="t">Welcome To Our Website!!!</div>
-          <div class="s">Under construction. Best viewed in Internet Explorer. Call us for prices. Page last updated 2014. Click here to enter.</div>
-        </div>
+    <div class="studio" data-studio>
+      <div class="studio-tabs" role="group" aria-label="Restyle the example for a business type">
+        <button type="button" data-theme="contractor" aria-pressed="true">Contractor</button>
+        <button type="button" data-theme="restaurant" aria-pressed="false">Restaurant</button>
+        <button type="button" data-theme="salon" aria-pressed="false">Salon</button>
+        <button type="button" data-theme="shop" aria-pressed="false">Shop</button>
       </div>
-      <div class="mock mock-new">
-        <div class="mock-bar"><i></i><i></i><i></i><b>yourbusiness.com</b></div>
-        <span class="tag">After</span>
-        <div class="mock-body">
-          <div class="mn-top"><span class="mn-logo"></span><span class="mn-pill"></span></div>
-          <div class="mn-h"></div>
-          <div class="mn-h s"></div>
-          <div class="mn-cards"><span></span><span></span><span></span></div>
-          <div class="mn-cta"><span></span><span></span></div>
+      <div class="ba">
+        <div class="pane pane-old" aria-hidden="true">
+          <div class="bar"><i></i><i></i><i></i><b>yourbusiness-2011.example</b></div>
+          <div class="old-body">
+            <div class="old-title">Welcome To Our Website!!!</div>
+            <div class="old-marq"><span>*** NOW ACCEPTING CHECKS *** CALL FOR PRICES *** BEST VIEWED IN INTERNET EXPLORER ***</span></div>
+            <p>We are a family owned business serving the area since 1998. Please call us for prices and hours.</p>
+            <p>Page last updated: March 2014. Copyright 2011.</p>
+            <span class="old-btn">Click Here To Enter</span>
+            <div class="old-uc">&#9888; Under construction</div>
+          </div>
         </div>
+        <div class="pane pane-new" aria-hidden="true">
+          <div class="bar"><i></i><i></i><i></i><b>yourroofingco.com</b></div>
+          <div class="new-body">
+            <div class="nb-nav"><b>Your Roofing Co.</b><span>Services · Work · Reviews</span><em>Call now</em></div>
+            <div class="nb-h">Roofs done right, the first time.</div>
+            <p class="nb-p">Licensed, insured and local. Free estimates within 48 hours.</p>
+            <div class="nb-cta"><b>Free estimate</b><b>Call now</b></div>
+            <div class="nb-cards"><div><b>Services</b><small>Roofing · siding · gutters</small></div><div><b>Our work</b><small>Before &amp; after photos</small></div><div><b>Reviews</b><small class="nb-stars">★★★★★</small></div></div>
+          </div>
+        </div>
+        <span class="tagx l">Before</span><span class="tagx r">After</span>
+        <span class="ba-handle" aria-hidden="true"></span>
+        <input class="ba-range" type="range" min="0" max="100" value="42" aria-label="Drag to compare an outdated website with a new one">
       </div>
+      <p class="studio-cap">Drag the handle to compare. Tap a business type to restyle the example.</p>
     </div>
   </div>
 </section>
+
+<div class="fx-marquee" aria-hidden="true"><div class="track"><span>Contractors</span><span>Restaurants</span><span>Salons</span><span>Landscapers</span><span>Auto shops</span><span>Bakeries</span><span>Cleaners</span><span>Plumbers</span><span>Electricians</span><span>Boutiques</span><span>Gyms</span><span>Masonry</span><span>Contractors</span><span>Restaurants</span><span>Salons</span><span>Landscapers</span><span>Auto shops</span><span>Bakeries</span><span>Cleaners</span><span>Plumbers</span><span>Electricians</span><span>Boutiques</span><span>Gyms</span><span>Masonry</span></div></div>
 
 <section class="section alt" id="pain">
   <div class="wrap">
@@ -344,5 +362,6 @@
   <a class="cb-demo" href="contact.html#demo">Free demo</a>
 </nav>
 <script src="assets/js/site.js"></script>
+<script src="assets/js/fx.js"></script>
 </body>
 </html>
