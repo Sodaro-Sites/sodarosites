@@ -7,7 +7,7 @@
 <meta name="description" content="We build you a free demo of your new website. You only pay if you love it. Custom sites for any business, live on your own domain in about a week.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://sodaro-sites.github.io/sodarosites/">
-<meta name="theme-color" content="#f7f9fc">
+<meta name="theme-color" content="#f4f6f3">
 <meta name="author" content="Sodaro Sites">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sodaro Sites">
@@ -26,9 +26,9 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Caveat:wght@500..700&family=Instrument+Sans:ital,wght@0,400..700;1,400&display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
-<link rel="stylesheet" href="assets/css/fx.css">
+<link rel="stylesheet" href="assets/css/markup.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -49,131 +49,139 @@
   </div>
 </header>
 <main id="main">
-<section class="hero fx-hero">
-  <div class="fx-aurora" aria-hidden="true"></div><div class="fx-grid" aria-hidden="true"></div><div class="fx-spot" aria-hidden="true"></div>
-  <div class="wrap hero-grid">
-    <div class="fx-in">
-      <span class="eyebrow">Websites for real businesses</span>
-      <h1><span class="fx-shine">No website? Bad website?</span> <span class="accent">Fixed.</span></h1>
-      <p class="lede">We build you a free demo of your new site. You only pay if you love it.</p>
+
+<section class="mk-hero">
+  <div class="wrap mk-hero-grid">
+    <div class="mk-copy">
+      <h1>No website?<br>Bad website?<br><span class="mk-fixed">Fixed.</span></h1>
+      <p class="lede">We build a working demo of your new site from your real business: your services, your photos, your reviews. You see it first. You pay only if you love it.</p>
+      <form class="mk-try" id="mkTry" autocomplete="off" onsubmit="return false">
+        <label for="mkName">Try it with your business</label>
+        <div class="mk-try-row">
+          <input id="mkName" name="name" maxlength="32" placeholder="Your business name" spellcheck="false">
+          <div class="mk-trades" role="group" aria-label="Type of business">
+            <button type="button" data-trade="contractor" aria-pressed="true">Contractor</button>
+            <button type="button" data-trade="restaurant" aria-pressed="false">Restaurant</button>
+            <button type="button" data-trade="salon" aria-pressed="false">Salon</button>
+            <button type="button" data-trade="shop" aria-pressed="false">Shop</button>
+          </div>
+        </div>
+      </form>
       <div class="btn-row">
-        <a class="btn btn-primary" href="contact.html#demo">Get my free demo</a>
-        <a class="btn btn-ghost" href="#packages">See the packages</a>
+        <a class="btn btn-primary" id="mkCta" href="contact.html#demo">Get my free demo</a>
+        <a class="btn btn-ghost" href="tel:+16313836322">Call (631) 383-6322</a>
       </div>
-      <ul class="hero-points">
-        <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Free demo, no strings</li>
-        <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> One payment, no deposit</li>
-        <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> Live on your domain in about a week</li>
+    </div>
+
+    <figure class="mk-stage" id="mkStage" data-view="new">
+      <div class="mk-switch" role="group" aria-label="Compare">
+        <button type="button" data-view="new" aria-pressed="true">Your new site</button>
+        <button type="button" data-view="old" aria-pressed="false">The old way</button>
+      </div>
+      <div class="mk-frame">
+        <div class="mk-bar"><i></i><i></i><i></i><b id="mkUrl">yourroofingco.com</b></div>
+        <div class="mk-screen">
+          <div class="mk-new" style="--t1:#1f4fff;--t2:#0b1d5c">
+            <div class="mk-nav b1"><b data-f="name">Your Roofing Co.</b><span>Services</span><span>Our work</span><span>Reviews</span><em class="mk-call">Call now</em></div>
+            <div class="mk-headline b2" data-f="h">Roofs done right, the first time.</div>
+            <p class="mk-sub b3" data-f="p">Licensed, insured and local. Free estimates within 48 hours.</p>
+            <div class="mk-ctas b3"><b data-f="a">Free estimate</b><b data-f="b">Call now</b></div>
+            <div class="mk-cards b4">
+              <div><b data-f="c1">Services</b><small data-f="d1">Roofing, siding, gutters</small></div>
+              <div><b data-f="c2">Our work</b><small data-f="d2">Before and after photos</small></div>
+              <div class="mk-review"><span>★★★★★</span><small>From your real Google reviews</small></div>
+            </div>
+          </div>
+          <div class="mk-old" aria-hidden="true">
+            <div class="o-title">Welcome To Our Website!!!</div>
+            <div class="o-marq"><span>*** CALL FOR PRICES *** BEST VIEWED IN INTERNET EXPLORER *** UNDER CONSTRUCTION ***</span></div>
+            <p class="o-p">We are a family owned business serving the area since 1998. Please call for hours.</p>
+            <p class="o-date">Page last updated: March 2014</p>
+            <span class="o-btn">Click Here To Enter</span>
+          </div>
+        </div>
+        <svg class="mk-ink" viewBox="0 0 600 420" preserveAspectRatio="none" aria-hidden="true">
+          <g class="ink-new">
+            <path d="M560 -26 C 572 4, 566 34, 548 56" />
+            <path d="M120 444 C 170 436, 250 432, 292 398" />
+            <ellipse cx="478" cy="347" rx="100" ry="54" />
+          </g>
+          <g class="ink-old">
+            <path d="M140 98 C 220 92, 320 102, 462 94" />
+            <ellipse cx="119" cy="215" rx="104" ry="24" />
+            <path d="M24 238 L 162 274 M 162 238 L 24 274" />
+          </g>
+        </svg>
+        <span class="mk-note n-new n1">tap to call, on every phone</span>
+        <span class="mk-note n-new n2">your work, your photos</span>
+        <span class="mk-note n-new n3">reviews people already left you</span>
+        <span class="mk-note n-old n4">no phone number anywhere?</span>
+        <span class="mk-note n-old n5">customers see this date</span>
+        <span class="mk-note n-old n6">tiny and broken on a phone</span>
+      </div>
+      <figcaption>Type your business name: the demo above is an example layout. Yours is built from your real business.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="mk-promise">
+  <div class="wrap mk-promise-grid">
+    <h2>People look you up before they call.</h2>
+    <div>
+      <p class="lede">If they find nothing, or a site that looks abandoned, they call the next business on the list. You never even know they were there.</p>
+      <ul class="mk-losses">
+        <li><b>They can't find you.</b> No site means no Google presence beyond a map pin.</li>
+        <li><b>It breaks on phones.</b> Tiny text, broken menus, no tap-to-call.</li>
+        <li><b>It looks abandoned.</b> Old prices, wrong hours, a 2014 copyright.</li>
+        <li><b>It doesn't earn trust.</b> No reviews, no photos of real work.</li>
       </ul>
     </div>
-    <div class="studio" data-studio>
-      <div class="studio-tabs" role="group" aria-label="Restyle the example for a business type">
-        <button type="button" data-theme="contractor" aria-pressed="true">Contractor</button>
-        <button type="button" data-theme="restaurant" aria-pressed="false">Restaurant</button>
-        <button type="button" data-theme="salon" aria-pressed="false">Salon</button>
-        <button type="button" data-theme="shop" aria-pressed="false">Shop</button>
-      </div>
-      <div class="ba">
-        <div class="pane pane-old" aria-hidden="true">
-          <div class="bar"><i></i><i></i><i></i><b>yourbusiness-2011.example</b></div>
-          <div class="old-body">
-            <div class="old-title">Welcome To Our Website!!!</div>
-            <div class="old-marq"><span>*** NOW ACCEPTING CHECKS *** CALL FOR PRICES *** BEST VIEWED IN INTERNET EXPLORER ***</span></div>
-            <p>We are a family owned business serving the area since 1998. Please call us for prices and hours.</p>
-            <p>Page last updated: March 2014. Copyright 2011.</p>
-            <span class="old-btn">Click Here To Enter</span>
-            <div class="old-uc">&#9888; Under construction</div>
-          </div>
-        </div>
-        <div class="pane pane-new" aria-hidden="true">
-          <div class="bar"><i></i><i></i><i></i><b>yourroofingco.com</b></div>
-          <div class="new-body">
-            <div class="nb-nav"><b>Your Roofing Co.</b><span>Services · Work · Reviews</span><em>Call now</em></div>
-            <div class="nb-h">Roofs done right, the first time.</div>
-            <p class="nb-p">Licensed, insured and local. Free estimates within 48 hours.</p>
-            <div class="nb-cta"><b>Free estimate</b><b>Call now</b></div>
-            <div class="nb-cards"><div><b>Services</b><small>Roofing · siding · gutters</small></div><div><b>Our work</b><small>Before &amp; after photos</small></div><div><b>Reviews</b><small class="nb-stars">★★★★★</small></div></div>
-          </div>
-        </div>
-        <span class="tagx l">Before</span><span class="tagx r">After</span>
-        <span class="ba-handle" aria-hidden="true"></span>
-        <input class="ba-range" type="range" min="0" max="100" value="42" aria-label="Drag to compare an outdated website with a new one">
-      </div>
-      <p class="studio-cap">Drag the handle to compare. Tap a business type to restyle the example.</p>
-    </div>
   </div>
 </section>
 
-<div class="fx-marquee" aria-hidden="true"><div class="track"><span>Contractors</span><span>Restaurants</span><span>Salons</span><span>Landscapers</span><span>Auto shops</span><span>Bakeries</span><span>Cleaners</span><span>Plumbers</span><span>Electricians</span><span>Boutiques</span><span>Gyms</span><span>Masonry</span><span>Contractors</span><span>Restaurants</span><span>Salons</span><span>Landscapers</span><span>Auto shops</span><span>Bakeries</span><span>Cleaners</span><span>Plumbers</span><span>Electricians</span><span>Boutiques</span><span>Gyms</span><span>Masonry</span></div></div>
-
-<section class="section alt" id="pain">
+<section class="section mk-how" id="how">
   <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">The problem</span>
-      <h2>A bad website quietly costs you customers every day.</h2>
-      <p class="lede">People look you up before they call. If they find nothing, or something that looks abandoned, they call the next business on the list. You never even know they were there.</p>
-    </div>
-    <div class="grid grid-4">
-      <div class="card reveal">
-        <div class="icon warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h3>They can't find you</h3>
-        <p>No site means no Google presence beyond a map pin. Competitors with real pages show up first.</p>
-      </div>
-      <div class="card reveal">
-        <div class="icon warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M3 3l18 18"/></svg></div>
-        <h3>It breaks on phones</h3>
-        <p>Most visitors are on a phone. Tiny text, broken menus, and no tap-to-call send them away.</p>
-      </div>
-      <div class="card reveal">
-        <div class="icon warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
-        <h3>It looks abandoned</h3>
-        <p>Old prices, wrong hours, a 2014 copyright. Customers wonder if you're still open.</p>
-      </div>
-      <div class="card reveal">
-        <div class="icon warn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9.5 12l1.8 1.8 3.7-3.7"/></svg></div>
-        <h3>It doesn't earn trust</h3>
-        <p>No reviews, no photos of real work, no clear way to reach you. Trust is the sale.</p>
-      </div>
-    </div>
+    <h2>See it first. Pay only if you love it.</h2>
+    <ol class="mk-steps">
+      <li><span class="mk-when">Usually within 48 hours</span><h3>Your free demo</h3><p>We research your business (services, menu, real reviews and photos) and build a working preview of your new site.</p></li>
+      <li><span class="mk-when">No deposit, ever</span><h3>Love it? Pay once.</h3><p>Pay the package price in full through a secure Stripe checkout. If you don't love it, you owe nothing.</p></li>
+      <li><span class="mk-when">About a week</span><h3>Live on your domain</h3><p>We finish every page, connect your own domain and launch. Your customers find a site that matches your work.</p></li>
+    </ol>
   </div>
 </section>
 
-<section class="section" id="how">
+<section class="section mk-work" id="examples">
   <div class="wrap">
-    <div class="head center reveal">
-      <span class="eyebrow">How it works</span>
-      <h2>See it first. Pay only if you love it.</h2>
-      <p class="lede">No sales pitch, no deposit, no risk. You see your new site before you spend a dollar.</p>
+    <div class="mk-work-head">
+      <h2>Real work. Real businesses.</h2>
+      <p class="lede">We only show sites we actually built, and we tell you whose they are.</p>
     </div>
-    <div class="grid grid-3 steps">
-      <div class="card step reveal">
-        <h3>Free demo</h3>
-        <p>We research your business (your services, menu, real reviews and photos) and build a working preview of your new site.</p>
-        <span class="when">Usually within 48 hours</span>
-      </div>
-      <div class="card step reveal">
-        <h3>Love it? Pay once.</h3>
-        <p>If you love it, you pay the package price in full through a secure Stripe checkout. If you don't, you owe nothing.</p>
-        <span class="when">No deposit, ever</span>
-      </div>
-      <div class="card step reveal">
-        <h3>Live on your domain</h3>
-        <p>We finish every page, connect your own domain, and launch. Your customers find a site that finally matches your work.</p>
-        <span class="when">About a week</span>
-      </div>
+    <div class="mk-work-grid">
+      <a class="mk-shot big" href="https://curbappealmasonryli.com" target="_blank" rel="noopener">
+        <img src="assets/img/curbappeal.jpg" width="1280" height="800" loading="lazy" alt="Curb Appeal Masonry homepage">
+        <span><b>Curb Appeal Masonry</b> Masonry and tile, Suffolk County. Live on its own domain.</span>
+      </a>
+      <a class="mk-shot" href="https://evelightsli.github.io" target="_blank" rel="noopener">
+        <img src="assets/img/evelights.jpg" width="1280" height="800" loading="lazy" alt="Eve Lights homepage">
+        <span><b>Eve Lights</b> Holiday light installation, Long Island.</span>
+      </a>
+      <a class="mk-shot" href="https://renov8ers.github.io" target="_blank" rel="noopener">
+        <img src="assets/img/renov8ers.jpg" width="1280" height="800" loading="lazy" alt="RENOV8ERS homepage">
+        <span><b>RENOV8ERS</b> Renovation consulting, Suffolk County. The owner's own company.</span>
+      </a>
     </div>
+    <p class="mk-more"><a href="examples.html">See every example and who it belongs to</a></p>
   </div>
 </section>
 
-<section class="section alt" id="packages">
+<section class="section mk-packages" id="packages">
   <div class="wrap">
-    <div class="head center reveal">
-      <span class="eyebrow">Packages</span>
-      <h2>Two packages. One payment. No surprises.</h2>
-      <p class="lede">Everything below is included in the price. Your domain is yours, registered in your name.</p>
+    <div class="mk-work-head">
+      <h2>Two packages. One payment.</h2>
+      <p class="lede">Everything below is included. Your domain is yours, registered in your name.</p>
     </div>
     <div class="pricing">
-      <article class="plan reveal">
+      <article class="plan">
         <h3>Local Hero Pack</h3>
         <p class="for">For local businesses that need to look as good as their work</p>
         <div class="price"><strong>$499</strong><span>one-time</span></div>
@@ -187,12 +195,10 @@
           <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Basic local SEO + Google Business Profile checked</span></li>
           <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>2 revision rounds + 14 days of fix support</span></li>
         </ul>
-        <div class="actions">
-          <a class="btn btn-ghost btn-block" href="packages.html#local-hero">See everything included</a>
-        </div>
+        <div class="actions"><a class="btn btn-ghost btn-block" href="packages.html#local-hero">See everything included</a></div>
       </article>
-      <article class="plan featured reveal">
-        <span class="badge">Best for growing businesses</span>
+      <article class="plan featured">
+        <span class="badge">best for growing businesses</span>
         <h3>Better Than Corporate</h3>
         <p class="for">Everything in Local Hero, built bigger</p>
         <div class="price"><strong>$899</strong><span>one-time</span></div>
@@ -206,120 +212,36 @@
           <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>QR code review page</span></li>
           <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>3 revision rounds + 30 days of priority changes</span></li>
         </ul>
-        <div class="actions">
-          <a class="btn btn-primary btn-block" href="packages.html#corporate">See everything included</a>
-        </div>
+        <div class="actions"><a class="btn btn-primary btn-block" href="packages.html#corporate">See everything included</a></div>
       </article>
     </div>
+    <p class="mk-care"><b>Sodaro Care, optional after launch:</b> updates, backups and monitoring handled for you for $49 a month, or $99 a month with a new SEO page every month. Cancel anytime. <a href="packages.html#care">Details</a></p>
   </div>
 </section>
 
-<section class="section" id="care">
-  <div class="wrap">
-    <div class="head center reveal">
-      <span class="eyebrow">Optional, after launch</span>
-      <h2>Sodaro Care keeps it fresh.</h2>
-      <p class="lede">Prices change, photos get old, hours shift. Send us a text and it's handled. Cancel anytime.</p>
-    </div>
-    <div class="care">
-      <div class="card reveal">
-        <h3>Sodaro Care Local</h3>
-        <div class="price"><strong>$49</strong><span>/month</span></div>
-        <ul class="checklist">
-          <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Hosting management</span></li>
-          <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Text, photo and price updates</span></li>
-          <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Backups, uptime and link checks</span></li>
-          <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Review monitoring</span></li>
-        </ul>
-      </div>
-      <div class="card reveal">
-        <h3>Sodaro Care Corporate</h3>
-        <div class="price"><strong>$99</strong><span>/month</span></div>
-        <ul class="checklist">
-          <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Everything in Care Local</span></li>
-          <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>One new SEO/content page every month</span></li>
-          <li><svg class="tick" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="currentColor" opacity=".14"/><path d="M6 10.3l2.6 2.6L14.2 7.4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Priority same-day changes</span></li>
-        </ul>
-      </div>
+<section class="section mk-faq" id="faq">
+  <div class="wrap mk-faq-grid">
+    <h2>Straight answers.</h2>
+    <div class="faq">
+      <details><summary>Is the demo really free?</summary><p>Yes. We build a working preview of your new site at no cost and with no obligation. If you don't love it, you owe nothing.</p></details>
+      <details><summary>When do I pay?</summary><p>Only after you've seen and approved your demo. You pay the full package price once, through a secure Stripe checkout. There's no deposit and no surprise invoice later.</p></details>
+      <details><summary>Who owns the domain?</summary><p>You do. You buy your domain in your own name (usually about $10–20 a year from any registrar), and we point your new site at it.</p></details>
+      <details><summary>Are there monthly fees?</summary><p>Not required. Hosting runs on GitHub Pages, which is free. Sodaro Care ($49 or $99/month) is optional, for owners who want updates, backups and monitoring handled for them.</p></details>
+      <details><summary>What if I ever want to leave?</summary><p>You get your site's code. Your domain was always yours. No hostage situations.</p></details>
+      <details><summary>Do you only work with local businesses?</summary><p>No. We build for any business, anywhere. Local Hero is designed around local businesses; Better Than Corporate fits bigger or multi-location operations.</p></details>
     </div>
   </div>
 </section>
 
-<section class="section alt" id="examples">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Real work only</span>
-      <h2>No fake portfolio. Here's what's real.</h2>
-      <p class="lede">We only show work we actually built, and we tell you whose it is. Client sites are added as they're approved.</p>
-    </div>
-    <div class="grid grid-3">
-      <a class="card lift ex-card reveal" href="https://curbappealmasonryli.com" target="_blank" rel="noopener">
-        <img src="assets/img/curbappeal.jpg" width="1280" height="800" loading="lazy" alt="Curb Appeal Masonry homepage">
-        <span class="label">Family business</span>
-        <h3>Curb Appeal Masonry</h3>
-        <p>Masonry &amp; tile, Suffolk County. Live on its own domain.</p>
-      </a>
-      <a class="card lift ex-card reveal" href="https://evelightsli.github.io" target="_blank" rel="noopener">
-        <img src="assets/img/evelights.jpg" width="1280" height="800" loading="lazy" alt="Eve Lights homepage">
-        <span class="label">Family business</span>
-        <h3>Eve Lights</h3>
-        <p>Holiday light installation, Long Island.</p>
-      </a>
-      <a class="card lift ex-card reveal" href="https://renov8ers.github.io" target="_blank" rel="noopener">
-        <img src="assets/img/renov8ers.jpg" width="1280" height="800" loading="lazy" alt="RENOV8ERS homepage">
-        <span class="label">Owner's own company</span>
-        <h3>RENOV8ERS</h3>
-        <p>Renovation consulting, Suffolk County.</p>
-      </a>
-    </div>
-    <div class="btn-row" style="margin-top:24px"><a class="btn btn-ghost" href="examples.html">See all examples</a></div>
-  </div>
-</section>
-
-<section class="section" id="faq">
-  <div class="wrap">
-    <div class="head center reveal">
-      <span class="eyebrow">FAQ</span>
-      <h2>Straight answers.</h2>
-    </div>
-    <div class="faq center-block">
-      <details>
-        <summary>Is the demo really free?</summary>
-        <p>Yes. We build a working preview of your new site at no cost and with no obligation. If you don't love it, you owe nothing.</p>
-      </details>
-      <details>
-        <summary>When do I pay?</summary>
-        <p>Only after you've seen and approved your demo. You pay the full package price once, through a secure Stripe checkout. There's no deposit and no surprise invoice later.</p>
-      </details>
-      <details>
-        <summary>Who owns the domain?</summary>
-        <p>You do. You buy your domain in your own name (usually about $10–20 a year from any registrar), and we point your new site at it.</p>
-      </details>
-      <details>
-        <summary>Are there monthly fees?</summary>
-        <p>Not required. Hosting runs on GitHub Pages, which is free. Sodaro Care ($49 or $99/month) is optional, for owners who want updates, backups and monitoring handled for them.</p>
-      </details>
-      <details>
-        <summary>What if I ever want to leave?</summary>
-        <p>You get your site's code. Your domain was always yours. No hostage situations.</p>
-      </details>
-      <details>
-        <summary>Do you only work with local businesses?</summary>
-        <p>No. We build for any business, anywhere. Local Hero is designed around local businesses; Better Than Corporate fits bigger or multi-location operations.</p>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="section tight">
-  <div class="wrap">
-    <div class="cta-band reveal">
+<section class="mk-close">
+  <div class="wrap mk-close-grid">
+    <div>
       <h2>Let's see what your site could look like.</h2>
-      <p class="lede">Tell us about your business. We'll build the demo. You decide.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="contact.html#demo">Get my free demo</a>
-        <a class="btn btn-ghost" href="sms:+16313836322">Text (631) 383-6322</a>
-      </div>
+      <p>Tell us about your business. We build the demo. You decide.</p>
+    </div>
+    <div class="mk-close-acts">
+      <a class="btn mk-btn-light" href="contact.html#demo">Get my free demo</a>
+      <a class="mk-close-phone" href="sms:+16313836322">or text (631) 383-6322<span class="mk-sign">Aaron answers personally</span></a>
     </div>
   </div>
 </section>
@@ -362,6 +284,6 @@
   <a class="cb-demo" href="contact.html#demo">Free demo</a>
 </nav>
 <script src="assets/js/site.js"></script>
-<script src="assets/js/fx.js"></script>
+<script src="assets/js/markup.js"></script>
 </body>
 </html>
