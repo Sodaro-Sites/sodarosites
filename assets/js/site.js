@@ -223,3 +223,11 @@ const SODARO_CONFIG = {
       });
   });
 })();
+
+/* The homepage's "try it with your business" box carries the name over: the demo form starts filled in. */
+(function () {
+  var q = new URLSearchParams(location.search), biz = document.getElementById("f-business"), about = document.getElementById("f-about");
+  var name = (q.get("business") || "").slice(0, 80), type = (q.get("type") || "").replace(/[^a-z]/g, "").slice(0, 20);
+  if (biz && name && !biz.value) biz.value = name;
+  if (about && type && !about.value) about.value = "We're a " + type + ". ";
+})();
