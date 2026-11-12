@@ -1,5 +1,5 @@
-/* Sodaro Sites home: the markup hero. Type a business name and pick a trade: the example site rebuilds with that
-   name; flip to "The old way" for the red-pen critique. One build-and-ink sequence on load; after that, motion only
+/* Sodaro Sites home: the redline hero. Type a business name and pick a trade: the example site rebuilds with that
+   name; flip to "The old way" for the red-pen critique (numbered pins, listed under the preview). One build-and-ink sequence on load; after that, motion only
    answers what the visitor does. */
 (function () {
   "use strict";
@@ -54,10 +54,9 @@
   stage.querySelectorAll(".mk-switch button").forEach(function (b) { b.addEventListener("click", function () { view(b.dataset.view); }); });
 
   // the one load moment: the demo builds, then the pen writes on it
-  stage.querySelectorAll(".mk-ink path, .mk-ink ellipse").forEach(function (p) { p.setAttribute("pathLength", "1"); });
   if (calm) { stage.classList.add("inked"); }
   else {
     stage.classList.add("build");
-    setTimeout(function () { stage.classList.add("inked"); }, 900);
+    setTimeout(function () { stage.classList.add("inked"); }, 1000);
   }
 })();

@@ -59,6 +59,26 @@ const SODARO_CONFIG = {
     });
   }
 
+  /* ---------- Phone call bar: tucked away while the page's own buttons or the demo form are on screen ---------- */
+  var callbar = document.querySelector(".callbar");
+  var keepClear = document.querySelectorAll("[data-hero-actions], #demo-form");
+  if (callbar && keepClear.length && "IntersectionObserver" in window) {
+    var visible = new Set();
+    var sync = function () {
+      var focusedInForm = document.activeElement && document.activeElement.closest && document.activeElement.closest("#demo-form");
+      var tuck = visible.size > 0 || !!focusedInForm;
+      callbar.classList.toggle("is-tucked", tuck);
+      if (tuck) callbar.setAttribute("inert", ""); else callbar.removeAttribute("inert");
+    };
+    var barIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) visible.add(en.target); else visible.delete(en.target); });
+      sync();
+    }, { rootMargin: "0px 0px -40px 0px" });
+    keepClear.forEach(function (el) { barIO.observe(el); });
+    document.addEventListener("focusin", sync);
+    document.addEventListener("focusout", function () { setTimeout(sync, 0); });
+  }
+
   /* ---------- Reveal on scroll ---------- */
   var reveals = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && reveals.length) {
