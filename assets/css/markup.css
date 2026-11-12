@@ -7,7 +7,7 @@
 .mk-hero-grid { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(32px, 5vw, 72px); align-items: center; }
 .mk-copy h1 { font-size: clamp(3.1rem, 6vw, 5.6rem); line-height: .94; letter-spacing: -0.05em; font-weight: 800; font-stretch: 88%; margin-bottom: 24px; }
 .mk-l { display: block; }
-.mk-struck { position: relative; display: inline-block; color: #8b93a3; }
+.mk-struck { position: relative; display: inline-block; color: #6f7787; }
 .mk-strike { position: absolute; left: -3%; width: 106%; top: 34%; height: .42em; overflow: visible; pointer-events: none; }
 .mk-strike path { fill: none; stroke: var(--red); stroke-width: 7; stroke-linecap: round; vector-effect: non-scaling-stroke; stroke-dasharray: 1; stroke-dashoffset: 0; }
 .mk-copy .lede { max-width: 32em; margin-bottom: 26px; }
